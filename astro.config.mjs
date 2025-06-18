@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://diti223.github.io',
-  base: '/Lemon-landing',
+  base: '/',
   outDir: './docs',
   vite: {
     plugins: [tailwindcss()]
