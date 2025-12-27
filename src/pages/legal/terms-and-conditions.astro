@@ -88,13 +88,70 @@ import Layout from '../../layouts/Layout.astro';
           </div>
         </section>
 
-        <!-- Payment -->
+        <!-- Subscriptions & Payments -->
         <section class="mb-12">
-          <h2 class="text-2xl font-semibold text-gray-900 mb-6 border-b border-gray-200 pb-2">4. Payment & Subscriptions</h2>
-          <p class="text-gray-700 mb-4">
-            Currently, the App is offered as a free service. We may introduce premium features in the future, 
-            which will be processed through Apple's In-App Purchase system.
-          </p>
+          <h2 class="text-2xl font-semibold text-gray-900 mb-6 border-b border-gray-200 pb-2">4. Subscriptions and Payments</h2>
+          
+          <div class="space-y-8">
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">4.1. Free and Premium Services</h3>
+              <p class="text-gray-700">
+                The App is offered with a free version and a paid "Premium" version. You may use the free version with limited features, or you may choose to purchase access to Premium features.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">4.2. Pricing and Payment</h3>
+              <p class="text-gray-700 mb-4">
+                Premium access is available as either an auto-renewing subscription (e.g., Monthly or Yearly) or as a one-time "Lifetime" purchase.
+              </p>
+              <ul class="space-y-4">
+                <li class="flex items-start">
+                  <span class="flex-shrink-0 w-2 h-2 bg-lemon rounded-full mt-2.5 mr-3"></span>
+                  <span><strong class="text-gray-900">Pricing:</strong> The specific pricing for each option is clearly displayed within the App at the time of purchase and may vary based on your region and currency.</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="flex-shrink-0 w-2 h-2 bg-lemon rounded-full mt-2.5 mr-3"></span>
+                  <span><strong class="text-gray-900">Payment:</strong> Payment will be charged to your Apple ID account at confirmation of purchase.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">4.3. Auto-Renewing Subscriptions</h3>
+              <p class="text-gray-700 mb-4">
+                If you choose a subscription plan (Monthly or Yearly):
+              </p>
+              <ul class="space-y-4">
+                <li class="flex items-start">
+                  <span class="flex-shrink-0 w-2 h-2 bg-lemon rounded-full mt-2.5 mr-3"></span>
+                  <span><strong class="text-gray-900">Renewal:</strong> Your subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period.</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="flex-shrink-0 w-2 h-2 bg-lemon rounded-full mt-2.5 mr-3"></span>
+                  <span><strong class="text-gray-900">Charges:</strong> Your account will be charged for renewal within 24 hours prior to the end of the current period at the cost of the chosen package.</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="flex-shrink-0 w-2 h-2 bg-lemon rounded-full mt-2.5 mr-3"></span>
+                  <span><strong class="text-gray-900">Management:</strong> You can manage your subscription and turn off auto-renewal by going to your Account Settings on your device after purchase.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">4.4. Lifetime Access</h3>
+              <p class="text-gray-700">
+                If you choose the "Lifetime" option, this is a one-time non-consumable purchase that grants you access to Premium features for the lifetime of the App's availability. This is not a subscription and does not renew.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">4.5. Refunds</h3>
+              <p class="text-gray-700">
+                All purchases, including subscriptions and lifetime access, are processed and managed by Apple. Therefore, we cannot directly issue refunds. Refund requests must be made directly to Apple Support in accordance with their refund policies.
+              </p>
+            </div>
+          </div>
         </section>
 
         <!-- Third Parties -->
