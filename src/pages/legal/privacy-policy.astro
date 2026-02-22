@@ -48,7 +48,7 @@ import Layout from '../../layouts/Layout.astro';
             <li class="flex items-start">
               <span class="flex-shrink-0 w-2 h-2 bg-lemon rounded-full mt-2.5 mr-3"></span>
               <div>
-                <strong>Authentication & Account Information:</strong> When you create an account, we require an email address and password for authentication. No additional personal details (such as your name, age, or gender) are collected. In addition, the App collects a device identifier to help manage and secure your account.
+                <strong>No Account Required:</strong> You do not need an account to use the App. We do not collect names, email addresses, or other personally identifiable information.
               </div>
             </li>
           </ul>
@@ -68,7 +68,7 @@ import Layout from '../../layouts/Layout.astro';
             <li class="flex items-start">
               <span class="flex-shrink-0 w-2 h-2 bg-lemon rounded-full mt-2.5 mr-3"></span>
               <div>
-                <strong>Analytics & Improvement:</strong> We use Firebase Analytics to track app interactions, screen views, and error reports. This usage data is collected to help us improve the functionality and user experience of the App over time.
+                <strong>Analytics & Diagnostics:</strong> The App uses standard analytics securely provided by Apple and RevenueCat (for purchases and subscriptions) to help us improve stability and functionality.
               </div>
             </li>
           </ul>
@@ -82,7 +82,7 @@ import Layout from '../../layouts/Layout.astro';
             <li class="flex items-start">
               <span class="flex-shrink-0 w-2 h-2 bg-lemon rounded-full mt-2.5 mr-3"></span>
               <div>
-                <strong>Local and Cloud Storage:</strong> Most of your data (e.g., journal entries, recipes, meal plans) is stored locally on your device. The only information stored on our servers is your email address (via Firebase) and data related to crash reports and feedback (via Bugfender).
+                <strong>Local and Cloud Storage:</strong> All of your data (e.g., journal entries, recipes, meal plans) is stored locally on your device or in your personal iCloud. We do not maintain any servers to store your personal app data.
               </div>
             </li>
           </ul>
@@ -92,7 +92,7 @@ import Layout from '../../layouts/Layout.astro';
             <li class="flex items-start">
               <span class="flex-shrink-0 w-2 h-2 bg-lemon rounded-full mt-2.5 mr-3"></span>
               <div>
-                <strong>Data Protection:</strong> We employ industry-standard security measures including encryption and secure network connections to safeguard your data. While we take reasonable steps to protect your information, please note that no security system is completely foolproof. In the event of a data breach, we will follow our internal breach-response procedures and notify you as required by applicable law.
+                <strong>Data Protection:</strong> We employ industry-standard security measures including encryption and secure network connections to safeguard your data. While we take reasonable steps to protect your information, no security system is completely foolproof.
               </div>
             </li>
           </ul>
@@ -106,19 +106,15 @@ import Layout from '../../layouts/Layout.astro';
             <li class="flex items-start">
               <span class="flex-shrink-0 w-2 h-2 bg-lemon rounded-full mt-2.5 mr-3"></span>
               <div>
-                <strong>Analytics and Feedback Providers:</strong> To operate the App effectively, we share minimal information (such as your email address for authentication and device identifiers) with trusted third parties:
+                <strong>Service Providers:</strong> To operate the App effectively, we share minimal information with trusted third parties:
                 <ul class="mt-2 ml-4 space-y-1">
                   <li class="flex items-start">
                     <span class="flex-shrink-0 w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 mr-2"></span>
-                    <strong>Firebase:</strong> For user authentication and usage analytics.
+                    <strong>OpenAI:</strong> To generate nutritional data, estimations, and recipe suggestions. We send explicit text prompts—we do NOT send your name, email, or sensitive health data to OpenAI.
                   </li>
                   <li class="flex items-start">
                     <span class="flex-shrink-0 w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 mr-2"></span>
-                    <strong>Bugfender:</strong> For collecting crash reports and user feedback.
-                  </li>
-                  <li class="flex items-start">
-                    <span class="flex-shrink-0 w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 mr-2"></span>
-                    <strong>OpenAI:</strong> To generate nutritional data and recipe suggestions (note that the names of your food collections may be sent to OpenAI for helping allocate a generated recipe in an existing collection).
+                    <strong>RevenueCat:</strong> To securely manage premium subscriptions and purchases anonymously.
                   </li>
                 </ul>
               </div>
@@ -130,7 +126,7 @@ import Layout from '../../layouts/Layout.astro';
             <li class="flex items-start">
               <span class="flex-shrink-0 w-2 h-2 bg-lemon rounded-full mt-2.5 mr-3"></span>
               <div>
-                <strong>Secure Integrations:</strong> Any integrations or APIs used within the App (for example, for analytics or feedback collection) are selected and managed with security in mind. We do not share personal or sensitive data beyond what is necessary for these services.
+                <strong>Secure Integrations:</strong> Any integrations or APIs used within the App are selected and managed with security in mind. We do not share personal or sensitive data beyond what is necessary to return your recipe or macro request.
               </div>
             </li>
           </ul>
@@ -139,22 +135,22 @@ import Layout from '../../layouts/Layout.astro';
         <section class="mb-12">
           <h2 class="text-2xl font-semibold text-gray-900 mb-6 border-b border-gray-200 pb-2">4. User Rights & Data Management</h2>
           
-          <h3 class="text-xl font-medium text-gray-800 mb-4">4.1 Access, Review, and Deletion</h3>
+          <h3 class="text-xl font-medium text-gray-800 mb-4">4.1 Data Ownership</h3>
           <ul class="space-y-2 mb-6">
             <li class="flex items-start">
               <span class="flex-shrink-0 w-2 h-2 bg-lemon rounded-full mt-2.5 mr-3"></span>
               <div>
-                <strong>User Control:</strong> You can access and review your data directly through the App. In addition, a delete account function is provided, which ensures that your personal data and associated information (stored with Firebase and Bugfender) are removed from our systems upon your request.
+                <strong>User Control:</strong> Because your data is stored locally on your device or in your personal iCloud, you have full control over it. Deleting the App and its data from your device and/or iCloud completely removes all associated information. We do not store any of this data on external servers.
               </div>
             </li>
           </ul>
 
-          <h3 class="text-xl font-medium text-gray-800 mb-4">4.2 Consent for Data Collection</h3>
+          <h3 class="text-xl font-medium text-gray-800 mb-4">4.2 Consent for AI Processing</h3>
           <ul class="space-y-2 mb-6">
             <li class="flex items-start">
               <span class="flex-shrink-0 w-2 h-2 bg-lemon rounded-full mt-2.5 mr-3"></span>
               <div>
-                <strong>Opt-In for Analytics:</strong> During account creation, you are asked for consent to share your data for analytics purposes. You may adjust your consent settings through the App at any time.
+                <strong>Opt-In for AI Use:</strong> We explicitly request your consent before sending your food descriptions and prompts to OpenAI. You will see an opt-in screen prior to using AI-assisted features for the first time.
               </div>
             </li>
           </ul>
@@ -178,7 +174,7 @@ import Layout from '../../layouts/Layout.astro';
             <li class="flex items-start">
               <span class="flex-shrink-0 w-2 h-2 bg-lemon rounded-full mt-2.5 mr-3"></span>
               <div>
-                <strong>Retention Policy:</strong> We retain your data only as long as necessary to provide you with the App's services. Should you request deletion of your account, your data will be removed. Please note that while we delete data from our systems, the retention practices of third-party services like Firebase may be governed by their respective policies.
+                <strong>Retention Policy:</strong> As we do not store your personal app data on external servers, the retention of your data is entirely controlled by you on your device and iCloud.
               </div>
             </li>
           </ul>
@@ -188,7 +184,7 @@ import Layout from '../../layouts/Layout.astro';
             <li class="flex items-start">
               <span class="flex-shrink-0 w-2 h-2 bg-lemon rounded-full mt-2.5 mr-3"></span>
               <div>
-                <strong>Notification of Updates:</strong> If we make changes to this Privacy Policy, we will notify you through in-app notifications and via email. Continued use of the App after any changes signifies your acceptance of the updated policy.
+                <strong>Notification of Updates:</strong> If we make changes to this Privacy Policy, we will notify you through in-app notifications. Continued use of the App after any changes signifies your acceptance of the updated policy.
               </div>
             </li>
           </ul>
@@ -220,19 +216,11 @@ import Layout from '../../layouts/Layout.astro';
 
         <section class="mb-12">
           <h2 class="text-2xl font-semibold text-gray-900 mb-6 border-b border-gray-200 pb-2">7. Purpose of Data Processing</h2>
-          <p class="text-gray-700 mb-4">The primary purpose of collecting and processing your data is to:</p>
+          <p class="text-gray-700 mb-4">The primary purpose of processing your data is to:</p>
           <ul class="space-y-2 mb-6">
             <li class="flex items-start">
               <span class="flex-shrink-0 w-2 h-2 bg-lemon rounded-full mt-2.5 mr-3"></span>
-              Authenticate and manage your account securely.
-            </li>
-            <li class="flex items-start">
-              <span class="flex-shrink-0 w-2 h-2 bg-lemon rounded-full mt-2.5 mr-3"></span>
               Enable and enhance the nutritional tracking features of the App.
-            </li>
-            <li class="flex items-start">
-              <span class="flex-shrink-0 w-2 h-2 bg-lemon rounded-full mt-2.5 mr-3"></span>
-              Analyze app usage to continuously improve the service.
             </li>
             <li class="flex items-start">
               <span class="flex-shrink-0 w-2 h-2 bg-lemon rounded-full mt-2.5 mr-3"></span>
@@ -266,7 +254,7 @@ import Layout from '../../layouts/Layout.astro';
             <li class="flex items-start">
               <span class="flex-shrink-0 w-2 h-2 bg-lemon rounded-full mt-2.5 mr-3"></span>
               <div>
-                <strong>Opt-In Communications:</strong> With your consent during sign-up, we may use your email address for marketing communications. You can opt out of these communications at any time through the settings provided in the App.
+                <strong>No Marketing Emails:</strong> Because we do not collect your email address or require an account, we do not send you marketing or promotional emails.
               </div>
             </li>
           </ul>
