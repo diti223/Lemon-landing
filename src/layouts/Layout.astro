@@ -8,6 +8,7 @@ export interface Props {
 
 const { title, description, ogImage = '/lemon-app-entry-screenshot.png', ogUrl = 'https://lemonnutrition.eu' } = Astro.props;
 import '../styles/global.css';
+import { LEMON_APP_ID } from '../lib/lemon-app';
 
 // Construct absolute URL for og:image
 const siteUrl = 'https://lemonnutrition.eu';
@@ -20,6 +21,7 @@ const fullOgImage = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title}</title>
   <meta name="description" content={description}>
+  <meta name="apple-itunes-app" content={`app-id=${LEMON_APP_ID}, app-argument=${ogUrl}`} />
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">

@@ -1,3 +1,7 @@
+---
+import { LEMON_APP_STORE_URL } from '../lib/lemon-app';
+---
+
 <!-- Hero Section -->
 <section class="pt-32 pb-20 px-6 bg-gradient-to-br from-white via-gray-50/50 to-white dark:from-gray-900 dark:via-gray-950 dark:to-gray-900 relative overflow-hidden transition-colors duration-300">
   <!-- Background food image - subtle, decorative -->
@@ -20,7 +24,7 @@
       Cook. Eat. Track.
     </p>
     <div class="flex flex-col gap-3 justify-center items-center">
-      <a href="https://apps.apple.com/ro/app/lemon-your-nutrition-partner/id6618148167" class="bg-[#F7C720] text-[#111111] px-8 py-4 rounded-full font-semibold text-lg hover:bg-[#E5B91A] transition-all duration-200 shadow-lg hover:shadow-xl">
+      <a href={LEMON_APP_STORE_URL} class="bg-[#F7C720] text-[#111111] px-8 py-4 rounded-full font-semibold text-lg hover:bg-[#E5B91A] transition-all duration-200 shadow-lg hover:shadow-xl">
         Download for iOS
       </a>
       <p class="text-sm text-gray-400 dark:text-gray-500 font-light">No account needed. Free to start.</p>
